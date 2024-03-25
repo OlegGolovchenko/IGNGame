@@ -1,9 +1,11 @@
-﻿namespace IGNGame;
+﻿using org.igrok_net.game.ui;
+
+namespace org.igrok_net.game;
 
 class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Window window = new Window();            
     }
 }
