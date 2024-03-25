@@ -15,12 +15,17 @@ namespace org.igrok_net.game.ui
             Console.WriteLine($"GLFW error {error} '{description}'!");
         }
 
-        public Window()
+        public Window(string title)
         {
             Natives.glfwSetErrorCallback(ErrorHandler);
             if (Natives.glfwInit() != Natives.GLFW_TRUE)
             {
-                Console.WriteLine("Failed to init glfw");
+                throw new Exception("Unable to initialize GLFW");
+            }
+            this.window = Natives.glfwCreateWindow(1366,768, title, IntPtr.Zero, IntPtr.Zero);
+            if(this.window == IntPtr.Zero)
+            {
+                throw new Exception("Unable to create GLFW window");
             }
         }
 

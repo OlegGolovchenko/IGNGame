@@ -22,6 +22,6 @@ namespace org.igrok_net.game.ui.natives
         [return: MarshalAs(UnmanagedType.FunctionPtr)]
         public static extern GLFWErrorFunc glfwSetErrorCallback([MarshalAs(UnmanagedType.FunctionPtr)] GLFWErrorFunc errorFunc);
         [DllImport("glfw3")]
-        public static extern 
+        public static extern IntPtr glfwCreateWindow([MarshalAs(UnmanagedType.I4)]int width, [MarshalAs(UnmanagedType.I4)]int height, [MarshalAs(UnmanagedType.LPStr)]string title, IntPtr monitor, IntPtr share);
     }
 }
