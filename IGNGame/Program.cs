@@ -6,6 +6,7 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Window window = new Window("IgRok-NET Game v0.0.1");
+        Window window = new Window("IgRok-NET Game v0.0.1", args);
+        window.Render();
     }
 }

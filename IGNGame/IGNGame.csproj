@@ -7,6 +7,11 @@
 		<Nullable>enable</Nullable>
 		<Platforms>AnyCpu;x86;x64</Platforms>
 		<RootNamespace>org.igrok_net.game</RootNamespace>
+		<IsWindows Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Windows)))' == 'true'">true</IsWindows>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(IsWindows)'=='true'">
+		<DefineConstants>WINDOWS</DefineConstants>
 	</PropertyGroup>
 
 	<ItemGroup>
