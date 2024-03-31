@@ -30,13 +30,13 @@
 
 	<PropertyGroup>
 		<!-- Define the destination path based on platform -->
-		<DllDestination>bin\$(Platform)\$(Configuration)\net8.0\glfw3.dll</DllDestination>
-		<DllDestination>bin\$(Platform)\$(Configuration)\net8.0\freeglut.dll</DllDestination>
+		<GLFWDestination>bin\$(Platform)\$(Configuration)\net8.0\glfw.dll</GLFWDestination>
+		<GlutDestination>bin\$(Platform)\$(Configuration)\net8.0\glut.dll</GlutDestination>
 	</PropertyGroup>
 
 	<Target Name="CopyDllToBin" AfterTargets="Build">
-		<Copy SourceFiles="@(GlfwDll)" DestinationFiles="$(DllDestination)" />
-		<Copy SourceFiles="@(FreeglutDll)" DestinationFiles="$(DllDestination)" />
+		<Copy SourceFiles="@(GlfwDll)" DestinationFiles="$(GLFWDestination)" />
+		<Copy SourceFiles="@(FreeglutDll)" DestinationFiles="$(GlutDestination)" />
 	</Target>
 
 </Project>

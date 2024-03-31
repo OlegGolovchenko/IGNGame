@@ -1,25 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/home/oleg/IGNGame/IGNGame/IGNGame/IGNGame.csproj": {}
+    "F:\\Programming\\IGN\\IGNGame\\IGNGame\\IGNGame.csproj": {}
   },
   "projects": {
-    "/home/oleg/IGNGame/IGNGame/IGNGame/IGNGame.csproj": {
+    "F:\\Programming\\IGN\\IGNGame\\IGNGame\\IGNGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/oleg/IGNGame/IGNGame/IGNGame/IGNGame.csproj",
+        "projectUniqueName": "F:\\Programming\\IGN\\IGNGame\\IGNGame\\IGNGame.csproj",
         "projectName": "IGNGame",
-        "projectPath": "/home/oleg/IGNGame/IGNGame/IGNGame/IGNGame.csproj",
-        "packagesPath": "/home/oleg/.nuget/packages/",
-        "outputPath": "/home/oleg/IGNGame/IGNGame/IGNGame/obj/",
+        "projectPath": "F:\\Programming\\IGN\\IGNGame\\IGNGame\\IGNGame.csproj",
+        "packagesPath": "C:\\Users\\IgRoK\\.nuget\\packages\\",
+        "outputPath": "F:\\Programming\\IGN\\IGNGame\\IGNGame\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "F:\\Program Files (x86)\\Microsoft Visual Studio\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/oleg/.nuget/NuGet/NuGet.Config"
+          "F:\\Programming\\NuGet.Config",
+          "C:\\Users\\IgRoK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "F:\\Programming\\IGN\\IGN-ASME\\org.igrok-net.asme.engine.ui.web\\bin\\Release": {},
+          "F:\\Programming\\IGN\\IGNQuery\\IGNQuery\\bin\\Release": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
