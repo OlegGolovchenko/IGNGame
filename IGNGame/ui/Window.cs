@@ -14,7 +14,7 @@ namespace org.igrok_net.game.ui
         {
             Console.WriteLine($"GLFW error {error} '{description}'!");
         }
-        private void KeyHandler(IntPtr window, int key, int scancode, int action, int mods) 
+        private void KeyHandler(IntPtr window, int key, int scancode, int action, int mods)
         {
             Console.WriteLine(key);
         }
@@ -28,8 +28,8 @@ namespace org.igrok_net.game.ui
             }
             Natives.glfwWindowHint(Natives.GLFW_CONTEXT_VERSION_MAJOR, 2);
             Natives.glfwWindowHint(Natives.GLFW_CONTEXT_VERSION_MINOR, 0);
-            this.window = Natives.glfwCreateWindow(1366,768, title, IntPtr.Zero, IntPtr.Zero);
-            if(this.window == IntPtr.Zero)
+            this.window = Natives.glfwCreateWindow(1366, 768, title, IntPtr.Zero, IntPtr.Zero);
+            if (this.window == IntPtr.Zero)
             {
                 throw new Exception("Unable to create GLFW window");
             }

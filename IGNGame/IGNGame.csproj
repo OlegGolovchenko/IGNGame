@@ -15,28 +15,31 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="lib\" />
+		<GlfwDll Include="lib\x86\glfw3.dll" Condition="'$(Platform)' == 'x86'" />
+		<GlfwDll Include="lib\x64\glfw3.dll" Condition="'$(Platform)' == 'x64'" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<GlfwDll Include="lib\win32\glfw3.dll" Condition="'$(Platform)' == 'x86'" />
-		<GlfwDll Include="lib\win64\glfw3.dll" Condition="'$(Platform)' == 'x64'" />
+		<FreeglutDll Include="lib\x86\freeglut.dll" Condition="'$(Platform)' == 'x86'" />
+		<FreeglutDll Include="lib\x64\freeglut.dll" Condition="'$(Platform)' == 'x64'" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<FreeglutDll Include="lib\win32\freeglut.dll" Condition="'$(Platform)' == 'x86'" />
-		<FreeglutDll Include="lib\win64\freeglut.dll" Condition="'$(Platform)' == 'x64'" />
+		<IgnnativesDll Include="lib\x86\ignnatives.dll" Condition="'$(Platform)' == 'x86'" />
+		<IgnnativesDll Include="lib\x64\ignnatives.dll" Condition="'$(Platform)' == 'x64'" />
 	</ItemGroup>
 
 	<PropertyGroup>
 		<!-- Define the destination path based on platform -->
 		<GLFWDestination>bin\$(Platform)\$(Configuration)\net8.0\glfw.dll</GLFWDestination>
 		<GlutDestination>bin\$(Platform)\$(Configuration)\net8.0\glut.dll</GlutDestination>
+		<IGNNativesDestination>bin\$(Platform)\$(Configuration)\net8.0\ignnatives.dll</IGNNativesDestination>
 	</PropertyGroup>
 
 	<Target Name="CopyDllToBin" AfterTargets="Build">
 		<Copy SourceFiles="@(GlfwDll)" DestinationFiles="$(GLFWDestination)" />
 		<Copy SourceFiles="@(FreeglutDll)" DestinationFiles="$(GlutDestination)" />
+		<Copy SourceFiles="@(IgnnativesDll)" DestinationFiles="$(IGNNativesDestination)" />
 	</Target>
 
 </Project>
