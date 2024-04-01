@@ -11,6 +11,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Include="..\IGNGame\Program.cs" Link="Program.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<ProjectReference Include="..\IGNGame.Engine.Natives\IGNGame.Engine.Natives.csproj" />
 	</ItemGroup>
 
