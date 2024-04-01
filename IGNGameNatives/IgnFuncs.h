@@ -1,4 +1,5 @@
 #pragma once
 #include <GL/glut.h>
-
-void* getGlutTimesNewRoman24();
+extern "C" {
+	__attribute__((visibility("default"))) void* getGlutTimesNewRoman24();
+}
