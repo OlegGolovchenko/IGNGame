@@ -10,6 +10,7 @@ namespace org.igrok_net.game.ui
     public class Window : IDisposable
     {
         private IntPtr window;
+        private IntPtr glutFont;
         private void ErrorHandler(int error, string description)
         {
             Console.WriteLine($"GLFW error {error} '{description}'!");
@@ -21,6 +22,7 @@ namespace org.igrok_net.game.ui
 
         public Window(string title, string[] args)
         {
+            this.glutFont = Natives.getGlutTimesNewRoman10();
             Natives.glfwSetErrorCallback(ErrorHandler);
             if (Natives.glfwInit() != Natives.GLFW_TRUE)
             {
@@ -43,14 +45,46 @@ namespace org.igrok_net.game.ui
 
         public void Render()
         {
+            var now = DateTime.Now;
+            var lastUpdate = now;
+            int avgFps = 0;
+            int fps = 0;
             while (Natives.glfwWindowShouldClose(this.window) != Natives.GLFW_TRUE)
             {
                 int width = 0;
                 int height = 0;
+
+                now = DateTime.Now;
+                if (now > lastUpdate.AddSeconds(1))
+                {
+                    avgFps = fps;
+                    fps = 0;
+                    lastUpdate = now;
+                }
+
                 Natives.glfwGetFramebufferSize(this.window, ref width, ref height);
+
                 Natives.glViewport(0, 0, width, height);
+
+                Natives.glClear(GLConstants.GL_COLOR_BUFFER_BIT | GLConstants.GL_DEPTH_BUFFER_BIT);
+
+                Natives.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+
+                Natives.glMatrixMode(GLConstants.GL_PROJECTION);
+                Natives.glLoadIdentity();
+
+                Natives.glOrtho(0, width, height, 0, -1, 1);
+
+                Natives.glMatrixMode(GLConstants.GL_MODELVIEW);
+                Natives.glLoadIdentity();
+
+                Natives.glRasterPos2i(10, 10);
+                Natives.glColor4f(0.0f, 1.0f, 0.0f, 1.0f);
+                Natives.glutBitmapString(this.glutFont, $"{avgFps} FPS");
+
                 Natives.glfwSwapBuffers(this.window);
                 Natives.glfwPollEvents();
+                fps++;
             }
         }
 
