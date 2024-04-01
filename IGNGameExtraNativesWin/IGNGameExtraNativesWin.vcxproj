@@ -79,7 +79,7 @@
     <TargetName>ignnatives</TargetName>
     <IncludePath>F:\Programming\IGN\IGNGame\freeglut\include;$(IncludePath)</IncludePath>
     <LibraryPath>F:\Programming\IGN\IGNGame\freeglut\lib;$(LibraryPath)</LibraryPath>
-    <OutDir>..\IGNGame\lib\x86</OutDir>
+    <OutDir>..\IGNGame\lib</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetName>ignnatives</TargetName>
@@ -90,7 +90,7 @@
     <TargetName>ignnatives</TargetName>
     <IncludePath>F:\Programming\IGN\IGNGame\freeglut\include;$(IncludePath)</IncludePath>
     <LibraryPath>F:\Programming\IGN\IGNGame\freeglut\lib\x64;$(LibraryPath)</LibraryPath>
-    <OutDir>..\IGNGame\lib\x64</OutDir>
+    <OutDir>..\IGNGame64\lib</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

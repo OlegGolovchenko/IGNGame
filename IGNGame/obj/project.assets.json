@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "IGNGame.Engine.Natives/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/IGNGame.Engine.Natives.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IGNGame.Engine.Natives.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "IGNGame.Engine.Natives/1.0.0": {
+      "type": "project",
+      "path": "../IGNGame.Engine.Natives/IGNGame.Engine.Natives.csproj",
+      "msbuildProject": "../IGNGame.Engine.Natives/IGNGame.Engine.Natives.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "IGNGame.Engine.Natives >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\IgRoK\\.nuget\\packages\\": {},
@@ -42,7 +61,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\Programming\\IGN\\IGNGame\\IGNGame.Engine.Natives\\IGNGame.Engine.Natives.csproj": {
+              "projectPath": "F:\\Programming\\IGN\\IGNGame\\IGNGame.Engine.Natives\\IGNGame.Engine.Natives.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

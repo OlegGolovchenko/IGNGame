@@ -10,7 +10,7 @@ namespace org.igrok_net.game.ui.natives
     public delegate void GLFWErrorFunc([MarshalAs(UnmanagedType.I4)] int error, [MarshalAs(UnmanagedType.LPStr)] string description);
     public delegate void GLFWkeyfun(IntPtr window, [MarshalAs(UnmanagedType.I4)] int key, [MarshalAs(UnmanagedType.I4)] int scancode, [MarshalAs(UnmanagedType.I4)] int action, [MarshalAs(UnmanagedType.I4)] int mods);
 
-    internal static class Natives
+    public static class Natives
     {
         [DllImport("ignnatives")]
         public static extern IntPtr getGlutTimesNewRoman24();

@@ -5,24 +5,19 @@
 		<TargetFramework>net8.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<Platforms>AnyCpu;x86</Platforms>
+		<PlatformTarget>x64</PlatformTarget>
 		<RootNamespace>org.igrok_net.game</RootNamespace>
-		<IsWindows Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Windows)))' == 'true'">true</IsWindows>
-		<PlatformTarget>x86</PlatformTarget>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(IsWindows)'=='true'">
-		<DefineConstants>WINDOWS</DefineConstants>
+		<Platforms>x64</Platforms>
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\IGNGame.Engine.Natives\IGNGame.Engine.Natives.csproj" />
+		<ProjectReference Include="..\IGNGame.Engine.Natives\IGNGame.Engine.Natives.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="lib\" />
+		<Folder Include="lib\" />
 	</ItemGroup>
-
+	
 	<ItemGroup>
 		<GlfwDll Include="$([System.IO.Path]::Combine(lib,glfw3.dll))" />
 	</ItemGroup>

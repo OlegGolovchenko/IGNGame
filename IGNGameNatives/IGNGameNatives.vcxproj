@@ -54,14 +54,14 @@
     <TargetName>libigngamen</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>..\IGNGame\lib\x64</OutDir>
+    <OutDir>..\IGNGame64\lib</OutDir>
     <TargetName>libignnatives</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <TargetName>libigngamen</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
-    <OutDir>..\IGNGame\lib\x86</OutDir>
+    <OutDir>..\IGNGame\lib</OutDir>
     <TargetName>libignnatives</TargetName>
   </PropertyGroup>
   <ItemGroup>

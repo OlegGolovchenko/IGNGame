@@ -4,6 +4,74 @@
     "F:\\Programming\\IGN\\IGNGame\\IGNGame\\IGNGame.csproj": {}
   },
   "projects": {
+    "F:\\Programming\\IGN\\IGNGame\\IGNGame.Engine.Natives\\IGNGame.Engine.Natives.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Programming\\IGN\\IGNGame\\IGNGame.Engine.Natives\\IGNGame.Engine.Natives.csproj",
+        "projectName": "IGNGame.Engine.Natives",
+        "projectPath": "F:\\Programming\\IGN\\IGNGame\\IGNGame.Engine.Natives\\IGNGame.Engine.Natives.csproj",
+        "packagesPath": "C:\\Users\\IgRoK\\.nuget\\packages\\",
+        "outputPath": "F:\\Programming\\IGN\\IGNGame\\IGNGame.Engine.Natives\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "F:\\Program Files (x86)\\Microsoft Visual Studio\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "F:\\Programming\\NuGet.Config",
+          "C:\\Users\\IgRoK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "F:\\Programming\\IGN\\IGN-ASME\\org.igrok-net.asme.engine.ui.web\\bin\\Release": {},
+          "F:\\Programming\\IGN\\IGNQuery\\IGNQuery\\bin\\Release": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "F:\\Programming\\IGN\\IGNGame\\IGNGame\\IGNGame.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -35,7 +103,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\Programming\\IGN\\IGNGame\\IGNGame.Engine.Natives\\IGNGame.Engine.Natives.csproj": {
+                "projectPath": "F:\\Programming\\IGN\\IGNGame\\IGNGame.Engine.Natives\\IGNGame.Engine.Natives.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
