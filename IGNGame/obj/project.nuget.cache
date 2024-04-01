@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yyBg9bF1UEXLtCkR+g0uMTCQk8w2HlmzrfjNzm/iSL/VUUVRusN0safajZ3nE7HBvKEPTbZklPYni+MLEFW0Ow==",
+  "dgSpecHash": "FpmnpRpZtbVbrd4CHV102THxggoaDs86azWeKOkChglFb86L7WvK2ymSYDTFeHieNG0A3cvwa+EIfzB3dBfmlw==",
   "success": true,
-  "projectFilePath": "F:\\Programming\\IGN\\IGNGame\\IGNGame\\IGNGame.csproj",
+  "projectFilePath": "/home/oleg/IGNGame/IGNGame/IGNGame/IGNGame.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
