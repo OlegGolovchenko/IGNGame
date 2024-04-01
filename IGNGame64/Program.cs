@@ -7,7 +7,6 @@ namespace IGNGame64
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Natives.getGlutTimesNewRoman24());
             Window window = new Window("IgRok-NET Game v0.0.1", args);
             window.Render();
         }

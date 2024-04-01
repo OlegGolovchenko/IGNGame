@@ -27,43 +27,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\IgRoK\\.nuget\\packages\\": {},
-    "F:\\Program Files (x86)\\Microsoft Visual Studio\\NuGetPackages": {}
+    "/home/oleg/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Programming\\IGN\\IGNGame\\IGNGame\\IGNGame.csproj",
+      "projectUniqueName": "/home/oleg/IGNGame/IGNGame/IGNGame/IGNGame.csproj",
       "projectName": "IGNGame",
-      "projectPath": "F:\\Programming\\IGN\\IGNGame\\IGNGame\\IGNGame.csproj",
-      "packagesPath": "C:\\Users\\IgRoK\\.nuget\\packages\\",
-      "outputPath": "F:\\Programming\\IGN\\IGNGame\\IGNGame\\obj\\",
+      "projectPath": "/home/oleg/IGNGame/IGNGame/IGNGame/IGNGame.csproj",
+      "packagesPath": "/home/oleg/.nuget/packages/",
+      "outputPath": "/home/oleg/IGNGame/IGNGame/IGNGame/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "F:\\Program Files (x86)\\Microsoft Visual Studio\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "F:\\Programming\\NuGet.Config",
-        "C:\\Users\\IgRoK\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/oleg/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "F:\\Programming\\IGN\\IGN-ASME\\org.igrok-net.asme.engine.ui.web\\bin\\Release": {},
-        "F:\\Programming\\IGN\\IGNQuery\\IGNQuery\\bin\\Release": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\Programming\\IGN\\IGNGame\\IGNGame.Engine.Natives\\IGNGame.Engine.Natives.csproj": {
-              "projectPath": "F:\\Programming\\IGN\\IGNGame\\IGNGame.Engine.Natives\\IGNGame.Engine.Natives.csproj"
+            "/home/oleg/IGNGame/IGNGame/IGNGame.Engine.Natives/IGNGame.Engine.Natives.csproj": {
+              "projectPath": "/home/oleg/IGNGame/IGNGame/IGNGame.Engine.Natives/IGNGame.Engine.Natives.csproj"
             }
           }
         }
@@ -98,7 +87,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
