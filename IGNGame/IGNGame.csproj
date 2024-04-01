@@ -29,17 +29,24 @@
 		<IgnnativesDll Include="lib\x64\ignnatives.dll" Condition="'$(Platform)' == 'x64'" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<IgnnativesLDll Include="lib\x86\libignnatives.so" Condition="'$(Platform)' == 'x86'" />
+		<IgnnativesLDll Include="lib\x64\libignnatives.so" Condition="'$(Platform)' == 'x64'" />
+	</ItemGroup>
+
 	<PropertyGroup>
 		<!-- Define the destination path based on platform -->
 		<GLFWDestination>bin\$(Platform)\$(Configuration)\net8.0\glfw.dll</GLFWDestination>
 		<GlutDestination>bin\$(Platform)\$(Configuration)\net8.0\glut.dll</GlutDestination>
 		<IGNNativesDestination>bin\$(Platform)\$(Configuration)\net8.0\ignnatives.dll</IGNNativesDestination>
+		<IGNNativesLDestination>bin\$(Platform)\$(Configuration)\net8.0\libignnatives.so</IGNNativesLDestination>
 	</PropertyGroup>
 
 	<Target Name="CopyDllToBin" AfterTargets="Build">
 		<Copy SourceFiles="@(GlfwDll)" DestinationFiles="$(GLFWDestination)" />
 		<Copy SourceFiles="@(FreeglutDll)" DestinationFiles="$(GlutDestination)" />
 		<Copy SourceFiles="@(IgnnativesDll)" DestinationFiles="$(IGNNativesDestination)" />
+		<Copy SourceFiles="@(IgnnativesLDll)" DestinationFiles="$(IGNNativesLDestination)" />
 	</Target>
 
 </Project>
